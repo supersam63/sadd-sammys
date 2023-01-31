@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SADD SAMMY'S</title>
+  </head>
+  <style>
+    .project {
+      background: linear-gradient(
+        to top,
+        rgb(98, 201, 213) 20%,
+        rgb(255, 185, 221) 80%
+      );
+      margin: 30px 200px;
+      padding: 30px;
+      display: block;
+      border-radius: 30px;
+    }
+    h1 {
+      text-align: center;
+      color: #fee3b0;
+      font-family: cursive;
+      font-size: 75px;
+      line-height: 1;
+      margin-bottom: 10px;
+      -webkit-text-stroke: 0.1px #000000;
+    }
+    h2 {
+      text-align: center;
+    }
+    .tiers {
+      text-align: center;
+      font-family: cursive;
+      margin: 40px, 40px, 10px, 40px;
+      font-size: 22px;
+    }
+    hr {
+      max-width: 600px;
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+      padding: 10px;
+      border-radius: 20px;
+    }
+    .questions {
+      text-align: center;
+      font-size: 18px;
+    }
+    p {
+      font-size: 18px;
+      display: block;
+      line-height: 2;
+      text-align: justify;
+    }
+    button {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 24px;
+      border-radius: 25px;
+      background-color: rgb(255, 185, 221);
+      border: 1px solid #400082;
+      color: #400082;
+      font-size: 18px;
+      line-height: 24px;
+      padding: 16px 24px;
+      font-family: cursive;
+      box-shadow: 0px 7px 5px rgba(0, 0, 0, 1);
+      transition: all 200ms ease-in-out;
+    }
+    button:hover {
+      cursor: pointer;
+
+      box-shadow: none;
+    }
+    a {
+      margin: 16px;
+      font-size: 20px;
+      padding: 16px;
+      font-family: cursive;
+    }
+    .chef {
+      font-family: cursive;
+      font-size: 14px;
+      font-weight: bold;
+    }
+  </style>
+  <body>
+    <div class="project">
+      <h1>S.A.D.D. SAMMY'S</h1>
+      <h2>🌟SWEET AND DELICOUS DESSERTS🌟</h2>
+
+      <div class="tiers">
+        Let us bring the <em>tiers</em> while you make the cheers🥂
+      </div>
+      <br />
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/046/291/original/IMG_4054.jpeg?1663284825"
+        alt="Cake"
+        width="500" />
+      <hr />
+      <br />
+      <div class="questions">
+        Big bakeries breaking the bank🐖? Never satisfied due to lack of
+        flavor🤢? Or just need a little pick-me-up💪🏻?
+      </div>
+
+      <p>
+        Here at SADD Sammy's, we are positive our desserts will
+        <em>whisk</em> you off to your <em>desserted</em> island where you can
+        have your cake and eat it too! Always affordable and never skimping on
+        flavor, our desserts are sure to elevate any occasion. Gluten free?
+        Dairy free? Vegan? We have you covered too! Your guests won't even be
+        able to taste the difference. Don't believe us? Ask the dishes (or read
+        the reviews, that works too)!
+      </p>
+      <br />
+      <button>Click Here for Happiness</button>
+      <br />
+      <a href="https://www.instagram.com/supersam63/" target="_blank">
+        Connect with Sammy on Instagram
+      </a>
+      <br />
+      <br />
+      <span class="chef"
+        >*Chef Sammy was professionaly trained at the Park City Culinary
+        Institue and brings that elegence into her desserts.
+      </span>
+    </div>
+    <script>
+      function happiness() {
+        let name = prompt("What is your name?");
+        let location = prompt("Are you located in Utah?");
+        location = location.toLowerCase();
+        location = location.trim();
+        if (location === "yes") {
+          prompt(`Hooray! 🥳 Please enter your email address.`);
+          alert(
+            `Thank you, ${name}, for choosing SADD SAMMY'S! Your order form will be arriving shortly.`
+          );
+        } else {
+          alert(
+            `Sad day, ${name}. 😭 We are not currently serving outside the Utah area. Please come see us when you are in town! 🧁`
+          );
+        }
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", happiness);
+    </script>
+  </body>
+</html>

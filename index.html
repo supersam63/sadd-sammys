@@ -13,10 +13,16 @@
         rgb(98, 201, 213) 20%,
         rgb(255, 185, 221) 80%
       );
-      margin: 30px 200px;
+      margin: 0 auto;
       padding: 30px;
       display: block;
       border-radius: 30px;
+      max-width: 1200px;
+    }
+    .hero {
+      display: block;
+      margin: 0 auto;
+      max-width: 900px;
     }
     h1 {
       text-align: center;
@@ -76,38 +82,59 @@
       box-shadow: none;
     }
     a {
-      margin: 16px;
       font-size: 20px;
-      padding: 16px;
       font-family: cursive;
     }
+
     .chef {
       font-family: cursive;
       font-size: 14px;
       font-weight: bold;
+      margin-top: 14px;
+    }
+    @media (max-width: 860px) {
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      h1 {
+        font-size: 40px;
+      }
+      h2 {
+        font-size: 18px;
+      }
+      .instagram {
+        display: block;
+        text-align: center;
+        margin: 10px;
+      }
+      button {
+        margin-bottom: 0;
+      }
     }
   </style>
   <body>
     <div class="project">
-      <h1>S.A.D.D. SAMMY'S</h1>
-      <h2>🌟SWEET AND DELICOUS DESSERTS🌟</h2>
+      <div class="hero">
+        <h1>S.A.D.D. SAMMY'S</h1>
+        <h2>🌟SWEET AND DELICOUS DESSERTS🌟</h2>
 
-      <div class="tiers">
-        Let us bring the <em>tiers</em> while you make the cheers🥂
+        <div class="tiers">
+          Let us bring the <em>tiers</em> while you make the cheers🥂
+        </div>
+        <br />
+        <hr />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/046/291/original/IMG_4054.jpeg?1663284825"
+          alt="Cake"
+          width="500" />
+        <hr />
+        <br />
+        <div class="questions">
+          Big bakeries breaking the bank🐖? Never satisfied due to lack of
+          flavor🤢? Or just need a little pick-me-up💪🏻?
+        </div>
       </div>
-      <br />
-      <hr />
-      <img
-        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/046/291/original/IMG_4054.jpeg?1663284825"
-        alt="Cake"
-        width="500" />
-      <hr />
-      <br />
-      <div class="questions">
-        Big bakeries breaking the bank🐖? Never satisfied due to lack of
-        flavor🤢? Or just need a little pick-me-up💪🏻?
-      </div>
-
       <p>
         Here at SADD Sammy's, we are positive our desserts will
         <em>whisk</em> you off to your <em>desserted</em> island where you can
@@ -120,15 +147,17 @@
       <br />
       <button>Click Here for Happiness</button>
       <br />
-      <a href="https://www.instagram.com/supersam63/" target="_blank">
+      <a
+        href="https://www.instagram.com/supersam63/"
+        target="_blank"
+        class="instagram">
         Connect with Sammy on Instagram
       </a>
-      <br />
-      <br />
-      <span class="chef"
-        >*Chef Sammy was professionaly trained at the Park City Culinary
-        Institue and brings that elegence into her desserts.
-      </span>
+
+      <div class="chef">
+        *Chef Sammy was professionaly trained at the Park City Culinary Institue
+        and brings that elegence into her desserts.
+      </div>
     </div>
     <script>
       function happiness() {
